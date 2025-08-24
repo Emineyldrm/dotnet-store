@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using dotnet_store.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_store.Controllers;
 
@@ -14,9 +15,9 @@ public class HomeController : Controller
     public ActionResult Index()
     {
         //List<Urun> urunler = _context.Urunler.ToList(); 
-        var urunler = _context.Urunler.ToList(); 
+        var urunler = _context.Urunler.Where(urun => urun.Aktif && urun.Anasayfa && true).ToList();
         return View(urunler);
-    }
+    }   
 
     
 }

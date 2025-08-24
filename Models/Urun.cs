@@ -9,4 +9,7 @@ public class Urun
     public double Fiyat { get; set; }
     public bool Aktif { get; set; }
     public bool Anasayfa { get; set; }
+
+    public int KategoriId { get; set; }
+    public Kategori Kategori { get; set; } = null!;
 }

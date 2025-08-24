@@ -20,7 +20,17 @@ public class UrunController : Controller
     public ActionResult List()
     {
         //List<Urun> urunler = _context.Urunler.ToList(); 
-        var urunler = _context.Urunler.ToList();
+        var urunler = _context.Urunler.Where(i => i.Aktif).ToList();
         return View(urunler);
+    }
+
+     public ActionResult Details(int id)
+    {
+        //var urun = _context.Urunler.FirstOrDefaultAsync( i => i.Id == id);
+        //var urun = _context.Urunler.Where(i => i.Id == id).ToList();
+        //var urun = _context.Urunler.Where(i => i.UrunAdi == "Iphone 16").FirstOrDefault();
+        var urun = _context.Urunler.Find(id);
+
+        return View(urun);
     }
 }
