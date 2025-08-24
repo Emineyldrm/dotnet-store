@@ -12,10 +12,15 @@ public class UrunController : Controller
     {
         _context = context;
     }
+
     public ActionResult Index()
     {
+        return View();
+    }
+    public ActionResult List()
+    {
         //List<Urun> urunler = _context.Urunler.ToList(); 
-        var urunler = _context.Urunler.ToList(); 
+        var urunler = _context.Urunler.ToList();
         return View(urunler);
     }
 }

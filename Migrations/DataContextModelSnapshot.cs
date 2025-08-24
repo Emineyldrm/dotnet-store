@@ -22,13 +22,22 @@ namespace dotnet_store.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Aciklama")
+                        .HasColumnType("TEXT");
+
                     b.Property<bool>("Aktif")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("Anasayfa")
                         .HasColumnType("INTEGER");
 
                     b.Property<double>("Fiyat")
                         .HasColumnType("REAL");
 
-                    b.Property<string>("UrunAdı")
+                    b.Property<string>("Resim")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UrunAdi")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -39,44 +48,82 @@ namespace dotnet_store.Migrations
                         new
                         {
                             Id = 1,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
                             Aktif = true,
+                            Anasayfa = true,
                             Fiyat = 10000.0,
-                            UrunAdı = "Apple 7"
+                            Resim = "1.jpeg",
+                            UrunAdi = "Apple 7"
                         },
                         new
                         {
                             Id = 2,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
                             Aktif = false,
+                            Anasayfa = false,
                             Fiyat = 20000.0,
-                            UrunAdı = "Apple 8"
+                            Resim = "2.jpeg",
+                            UrunAdi = "Apple 8"
                         },
                         new
                         {
                             Id = 3,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
                             Aktif = true,
+                            Anasayfa = true,
                             Fiyat = 30000.0,
-                            UrunAdı = "Apple 9"
+                            Resim = "3.jpeg",
+                            UrunAdi = "Apple 9"
                         },
                         new
                         {
                             Id = 4,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
                             Aktif = true,
+                            Anasayfa = false,
                             Fiyat = 40000.0,
-                            UrunAdı = "Apple 10"
+                            Resim = "4.jpeg",
+                            UrunAdi = "Apple 10"
                         },
                         new
                         {
                             Id = 5,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
                             Aktif = false,
+                            Anasayfa = true,
                             Fiyat = 50000.0,
-                            UrunAdı = "Apple 11"
+                            Resim = "5.jpeg",
+                            UrunAdi = "Apple 11"
                         },
                         new
                         {
                             Id = 6,
-                            Aktif = true,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
+                            Aktif = false,
+                            Anasayfa = false,
                             Fiyat = 60000.0,
-                            UrunAdı = "Apple 12"
+                            Resim = "6.jpeg",
+                            UrunAdi = "Apple 12"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
+                            Aktif = true,
+                            Anasayfa = true,
+                            Fiyat = 70000.0,
+                            Resim = "7.jpeg",
+                            UrunAdi = "Apple 13"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Aciklama = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi totam harum deleniti dolore provident sequi aspernatur possimus eligendi corporis iure repellendus,  quidem accusamus, iusto quia quasi consequatur fuga fugit inventore.",
+                            Aktif = true,
+                            Anasayfa = true,
+                            Fiyat = 80000.0,
+                            Resim = "8.jpeg",
+                            UrunAdi = "Apple 14"
                         });
                 });
 #pragma warning restore 612, 618

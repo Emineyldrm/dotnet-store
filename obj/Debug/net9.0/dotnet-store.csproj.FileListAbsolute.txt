@@ -58,10 +58,7 @@ C:\Users\Emine\dotnet-store\obj\Debug\net9.0\dotnet-store.RazorAssemblyInfo.cs
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-C:\Users\Emine\dotnet-store\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\scopedcss\bundle\dotnet-store.styles.css
-C:\Users\Emine\dotnet-store\obj\Debug\net9.0\scopedcss\projectbundle\dotnet-store.bundle.scp.css
-C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\gejvkwke1r-b9sayid5wm.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\2v6xp16du8-61n19gt1b8.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\prp9f1ih76-xtxxf3hu2r.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\d6xi74t1eo-bqjiyaj88i.gz
@@ -123,8 +120,6 @@ C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\1iv1ywjztz-2z0ns9nrw6.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\a1tkkba8gl-muycvpuwrr.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\hxm858xkej-87fc7y1x7t.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\b6lx6vvi43-mlv21k5csn.gz
-C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\ka8km94e16-tih98aqvaf.gz
-C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\hyla0vsphq-tih98aqvaf.gz
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\staticwebassets.development.json
@@ -218,3 +213,8 @@ C:\Users\Emine\dotnet-store\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspace
 C:\Users\Emine\dotnet-store\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Emine\dotnet-store\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Emine\dotnet-store\obj\Debug\net9.0\dotnet-store.sourcelink.json
+C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\1g6igrmttz-tpznpjr8xw.gz
+C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\ybqhv9wpbv-vwipl5cvsg.gz
+C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\48lvmql9bb-wqhl0zxvjx.gz
+C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\v6fbf8u7hm-l6j59c68gs.gz
+C:\Users\Emine\dotnet-store\obj\Debug\net9.0\compressed\t7hgfmq9h6-f6guyl0605.gz
