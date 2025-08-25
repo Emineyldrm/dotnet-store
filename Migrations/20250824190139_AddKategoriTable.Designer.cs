@@ -10,8 +10,8 @@ using dotnet_store.Models;
 namespace dotnet_store.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250824183546_KategoriTable")]
-    partial class KategoriTable
+    [Migration("20250824190139_AddKategoriTable")]
+    partial class AddKategoriTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,7 +34,7 @@ namespace dotnet_store.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Kategori");
+                    b.ToTable("Kategoriler");
 
                     b.HasData(
                         new
@@ -66,6 +66,42 @@ namespace dotnet_store.Migrations
                             Id = 5,
                             KategoriAdi = "Giyim",
                             Url = "giyim"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            KategoriAdi = "Kategori 1",
+                            Url = "kategori-1"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            KategoriAdi = "Kategori 2",
+                            Url = "kategori-2"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            KategoriAdi = "Kategori 3",
+                            Url = "kategori-3"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            KategoriAdi = "Kategori 4",
+                            Url = "kategori-4"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            KategoriAdi = "Kategori 5",
+                            Url = "kategori-5"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            KategoriAdi = "Kategori 6",
+                            Url = "kategori-6"
                         });
                 });
 

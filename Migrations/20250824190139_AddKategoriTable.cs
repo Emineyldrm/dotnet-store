@@ -7,7 +7,7 @@
 namespace dotnet_store.Migrations
 {
     /// <inheritdoc />
-    public partial class KategoriTable : Migration
+    public partial class AddKategoriTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,7 @@ namespace dotnet_store.Migrations
                 defaultValue: 0);
 
             migrationBuilder.CreateTable(
-                name: "Kategori",
+                name: "Kategoriler",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
@@ -30,11 +30,11 @@ namespace dotnet_store.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Kategori", x => x.Id);
+                    table.PrimaryKey("PK_Kategoriler", x => x.Id);
                 });
 
             migrationBuilder.InsertData(
-                table: "Kategori",
+                table: "Kategoriler",
                 columns: new[] { "Id", "KategoriAdi", "Url" },
                 values: new object[,]
                 {
@@ -42,7 +42,13 @@ namespace dotnet_store.Migrations
                     { 2, "Beyaz Eşya", "beyaz-esya" },
                     { 3, "Elektronik", "elektronik" },
                     { 4, "Kozmetik", "kozmetik" },
-                    { 5, "Giyim", "giyim" }
+                    { 5, "Giyim", "giyim" },
+                    { 6, "Kategori 1", "kategori-1" },
+                    { 7, "Kategori 2", "kategori-2" },
+                    { 8, "Kategori 3", "kategori-3" },
+                    { 9, "Kategori 4", "kategori-4" },
+                    { 10, "Kategori 5", "kategori-5" },
+                    { 11, "Kategori 6", "kategori-6" }
                 });
 
             migrationBuilder.UpdateData(
@@ -107,10 +113,10 @@ namespace dotnet_store.Migrations
                 column: "KategoriId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Urunler_Kategori_KategoriId",
+                name: "FK_Urunler_Kategoriler_KategoriId",
                 table: "Urunler",
                 column: "KategoriId",
-                principalTable: "Kategori",
+                principalTable: "Kategoriler",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -119,11 +125,11 @@ namespace dotnet_store.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Urunler_Kategori_KategoriId",
+                name: "FK_Urunler_Kategoriler_KategoriId",
                 table: "Urunler");
 
             migrationBuilder.DropTable(
-                name: "Kategori");
+                name: "Kategoriler");
 
             migrationBuilder.DropIndex(
                 name: "IX_Urunler_KategoriId",

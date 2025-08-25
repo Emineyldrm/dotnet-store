@@ -16,6 +16,7 @@ public class HomeController : Controller
     {
         //List<Urun> urunler = _context.Urunler.ToList(); 
         var urunler = _context.Urunler.Where(urun => urun.Aktif && urun.Anasayfa && true).ToList();
+        ViewData["Katagoriler"]= _context.Kategoriler.ToList(); //katagorilere ulaşabiliyoruz
         return View(urunler);
     }   
 
