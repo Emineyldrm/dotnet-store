@@ -17,10 +17,10 @@ public class UrunController : Controller
     {
         return View();
     }
-    public ActionResult List()
+    public ActionResult List(string url)
     {
         //List<Urun> urunler = _context.Urunler.ToList(); 
-        var urunler = _context.Urunler.Where(i => i.Aktif).ToList();
+        var urunler = _context.Urunler.Where(i => i.Aktif && i.Kategori.Url==url).ToList();
         return View(urunler);
     }
 
@@ -30,6 +30,16 @@ public class UrunController : Controller
         //var urun = _context.Urunler.Where(i => i.Id == id).ToList();
         //var urun = _context.Urunler.Where(i => i.UrunAdi == "Iphone 16").FirstOrDefault();
         var urun = _context.Urunler.Find(id);
+        if (urun == null)
+        {
+            // return RedirectToAction("List");
+            return RedirectToAction("Index", "Home");
+        
+        }
+        ViewData["Benzer Urunler"]=_context.Urunler
+        .Where(i => i.Aktif && i.KategoriId == urun.KategoriId && i.Id != id)
+        .Take(4)
+        .ToList();
 
         return View(urun);
     }
