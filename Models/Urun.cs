@@ -3,7 +3,7 @@ namespace dotnet_store.Models;
 public class Urun
 {
     public int Id { get; set; }
-    public string? UrunAdi { get; set; }
+    public string UrunAdi { get; set; } = null!;
     public string? Resim { get; set; }
     public string? Aciklama { get; set; }
     public double Fiyat { get; set; }

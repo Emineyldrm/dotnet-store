@@ -17,11 +17,26 @@ public class UrunController : Controller
     {
         return View();
     }
-    public ActionResult List(string url)
+    public ActionResult List(string url, string q)
     {
+        //var query = _context.Urunler.AsQueryable();//Querylable
+        var query = _context.Urunler.Where(i =>i.Aktif);//Querylable
+        if (!string.IsNullOrEmpty(url))
+        {
+            //fitreleme, url nin dolu olduğu durum
+            query = query.Where(i => i.Kategori.Url == url);
+        }
+        if (!string.IsNullOrEmpty(q))
+        {
+            //fitreleme q ' nun dolu olduğu durm
+            query = query.Where(i => i.UrunAdi.ToLower().Contains(q.ToLower()));
+            ViewData["q"] = q;
+        }
+
         //List<Urun> urunler = _context.Urunler.ToList(); 
-        var urunler = _context.Urunler.Where(i => i.Aktif && i.Kategori.Url==url).ToList();
-        return View(urunler);
+        //var urunler = _context.Urunler.Where(i => i.Aktif && i.Kategori.Url==url).ToList();
+        //return View(urunler);
+        return View(query.ToList());
     }
 
      public ActionResult Details(int id)
